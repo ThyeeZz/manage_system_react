@@ -1,0 +1,41 @@
+.head-bar{
+  width: 100%;
+  height: 65px;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 10px 25px;
+  color: #fff;
+  align-items: center;
+  .head-left{
+    width: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    .head-left-imgwraper{
+      height: 45px;
+      width: 45px;
+      overflow: hidden;
+      border-radius: 50%;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .head-left-namewraper{
+      width: 350px;
+      height: 45px;
+      line-height: 45px;
+      margin-left: 25px;
+      font-size: 26px;
+      font-weight: bolder;
+      text-align: left;
+    }
+  }
+  .head-right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,86 @@
+.login-wraper {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(218, 216, 216);
+
+  .login-field {
+    width: 100%;
+    height: calc(100% - 65px);
+
+    .ant-form {
+      width: 350px;
+      height: 400px;
+      position: absolute;
+      right: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+      box-sizing: border-box;
+      padding: 25px 25px;
+      background-color: #fff;
+
+      .ant-form-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        .ant-form-item-control {
+          width: 100%;
+        }
+      }
+
+      .ant-btn {
+        width: 100%;
+        margin-top: 15px;
+      }
+    }
+
+    .contact {
+      position: relative;
+      right: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      .contact-tag {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 60px;
+        height: 180px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        padding: 25px 15px;
+        background-color: rgb(57, 112, 230);
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+
+      }
+
+      .contact-detail {
+        width: 220px;
+        height: 200px;
+        visibility: hidden;
+        z-index: -1;
+        position: absolute;
+        right: 75px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all .5s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, .4);
+      }
+
+      &:hover .contact-detail {
+        visibility: visible;
+        z-index: 100;
+      }
+    }
+  }
+
+}
